@@ -1,52 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
+    <meta charset="UTF-8">
     <title>Hello-ghpages by heartk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/heartk/hello-ghpages">View on GitHub</a>
-    <div class="shell">
+    <section class="page-header">
+      <h1 class="project-name">Hello-ghpages</h1>
+      <h2 class="project-tagline">learn create github repository deploy to github pages </h2>
+      <a href="https://github.com/heartk/hello-ghpages" class="btn">View on GitHub</a>
+      <a href="https://github.com/heartk/hello-ghpages/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/heartk/hello-ghpages/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Hello-ghpages</h1>
-            <h2>learn create github repository deploy to github pages </h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/heartk/hello-ghpages/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/heartk/hello-ghpages/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="this-is-my-first-try-to-create-a-page-for-me-to-use-ghpages" class="anchor" href="#this-is-my-first-try-to-create-a-page-for-me-to-use-ghpages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This is my first try to create a page for me to use ghpages</h3>
 
 <h3>
@@ -73,23 +46,139 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/heartk">heartk</a> can be found on <a href="https://github.com/heartk/hello-ghpages">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+<p>史上最详细“截图”搭建Hexo博客并部署到Github
+|浏览：2512|更新：2015-01-25 23:47|标签：截图 
+史上最详细“截图”搭建Hexo博客并部署到Github1史上最详细“截图”搭建Hexo博客并部署到Github2史上最详细“截图”搭建Hexo博客并部署到Github3史上最详细“截图”搭建Hexo博客并部署到Github4史上最详细“截图”搭建Hexo博客并部署到Github5史上最详细“截图”搭建Hexo博客并部署到Github6史上最详细“截图”搭建Hexo博客并部署到Github7
+分步阅读
+一键约师傅
+百度师傅最快的到家服务，最优质的电脑清灰！
+大家也搭建过博客，很多时候，按着教程来做就可以了，但是我当时为了搭建Hexo博客并部署到Github，走了不少弯路。现在终于搭建出来了，为了帮助大家，我决定写一篇“史上最详细“截图”搭建Hexo博客并部署到Github”。</p>
+
+<p>史上最详细“截图”搭建Hexo博客并部署到Github
+工具/原料
+Windows（Mac也是差不多，可参照）
+Git
+Node.js
+安装Hexo
+1
+利用 npm 命令即可安装。在任意位置点击鼠标右键，选择Git Base。
+史上最详细“截图”搭建Hexo博客并部署到Github
+2
+输入命令：
+npm install -g hexo
+注意：-g是指全局安装hexo。
+END
+创建Hexo文件夹
+安装完成后，在你喜爱的文件夹下（如C:\Hexo），执行以下指令(在C:\Hexo内点击鼠标右键，选择Git Bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。
+hexo init
+END
+安装依赖包
+npm install
+END
+本地查看
+现在我们已经搭建起本地的hexo博客了，执行以下命令(在C:\Hexo)，然后到浏览器输入localhost:4000看看。
+hexo generate
+hexo server
+史上最详细“截图”搭建Hexo博客并部署到Github
+END
+注册Github账号
+这里不演示了。
+END
+创建Repository
+创建的时候注意Repository的名字。比如我的Github账号是angelen10，那么我应该创建的Repository的名字是：angelen10.github.io。
+史上最详细“截图”搭建Hexo博客并部署到Github
+END
+修改配置文件
+1
+到你刚刚创建的Repository下，找到以下内容：
+史上最详细“截图”搭建Hexo博客并部署到Github
+2
+先点击HTTPS，然后复制里面的地址。然后编辑_config.yml文件（在C:\Hexo下）。
+史上最详细“截图”搭建Hexo博客并部署到Github
+3
+修改文件里面的deploy。其中的repository就改成你刚刚复制的地址。保存这个文件。
+史上最详细“截图”搭建Hexo博客并部署到Github
+END
+设置SSH keys
+1
+在Git Bash输入以下指令（任意位置点击鼠标右键），检查是否已经存在了SSH keys。
+ls -al ~/.ssh
+2
+如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件：
+史上最详细“截图”搭建Hexo博客并部署到Github
+3
+输入以下指令（邮箱就是你注册Github时候的邮箱）后，回车：
+ssh-keygen -t rsa -C "<a href="mailto:angelen10@163.com">angelen10@163.com</a>"
+史上最详细“截图”搭建Hexo博客并部署到Github
+4
+然后它会提示要你输入passphrase（如上图，我没有输入直接回车，如果你输入的话，要记得，到时候会用到）。之后，如果出现类似下图：
+史上最详细“截图”搭建Hexo博客并部署到Github
+5
+然后键入以下指令：
+ssh-agent -s
+史上最详细“截图”搭建Hexo博客并部署到Github
+6
+继续输入指令：
+ssh-add ~/.ssh/id_rsa
+7
+输入之后，在我这里是出错了，不知道你的有没有出错。
+史上最详细“截图”搭建Hexo博客并部署到Github
+8
+如果你的也是这样子出错了的话，就输入以下指令：
+eval <code>ssh-agent -s</code>
+ssh-add
+史上最详细“截图”搭建Hexo博客并部署到Github
+9
+到了这一步，就可以添加SSH key到你的Github账户了。键入以下指令，拷贝Key（先拷贝了，等一下可以直接粘贴）：
+clip &lt; ~/.ssh/id_rsa.pub
+10
+然后到Github里面，点击右上角的设置图标：
+史上最详细“截图”搭建Hexo博客并部署到Github
+11
+在Settings sidebar那里，点击SSH keys：
+史上最详细“截图”搭建Hexo博客并部署到Github
+12
+点击Add SSH key：
+史上最详细“截图”搭建Hexo博客并部署到Github
+13
+输入Title，作为这个key的描述吧（你可以输入Personal MacBook Air，瞬间高大上）
+史上最详细“截图”搭建Hexo博客并部署到Github
+14
+然后这个Key就是刚刚拷贝的，你直接粘贴就好（也可以文本打开以下文件）：
+史上最详细“截图”搭建Hexo博客并部署到Github
+15
+点击Add Key：
+史上最详细“截图”搭建Hexo博客并部署到Github
+16
+输入你的Github密码即可完成SSH Key的添加。嗯，最后还是测试一下吧，键入以下命令：
+ssh -T <a href="mailto:git@github.com">git@github.com</a>
+史上最详细“截图”搭建Hexo博客并部署到Github
+17
+你可能会看到有警告，没事，输入“yes”就好。
+END
+完成部署
+最后一步，快要成功了，键入指令：
+hexo generate
+hexo deploy
+OK，我们的博客就已经完全搭建起来了，在浏览器输入（当然，是你的用户名）：
+<a href="http://angelen10.github.io/">http://angelen10.github.io/</a>
+史上最详细“截图”搭建Hexo博客并部署到Github
+3
+注意：每次修改本地文件后，需要键入hexo generate才能保存。每次使用命令时，都要在C:\Hexo目录下。每次想要上传文件到Github时，就应该先键入hexo generate保存之后，再键入hexo deploy。大概成功之后是酱紫的：
+史上最详细“截图”搭建Hexo博客并部署到Github
+4
+对了，记住上图的Username是你的Github账号名称，而不是邮箱；Password就是你的Github的密码。</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/heartk/hello-ghpages">Hello-ghpages</a> is maintained by <a href="https://github.com/heartk">heartk</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
-    </div>
+    </section>
 
-              <script type="text/javascript">
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
